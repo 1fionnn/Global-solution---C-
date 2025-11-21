@@ -115,6 +115,7 @@ Criação automática do banco ao rodar o projeto
 
 
 🎥 Vídeo
+Vídeo demonstrativo: https://youtu.be/_dvSIkgXjzQ
 
 
 
