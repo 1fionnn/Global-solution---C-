@@ -24,8 +24,11 @@ Banco de dados SQLite + Entity Framework Core com Migrations.
 
 ✔️ Boas práticas REST (status code correto + verbos HTTP)
 
+
 ## Arquitetura do Projeto
 <img width="479" height="667" alt="image" src="https://github.com/user-attachments/assets/175a652d-dd0b-49e1-8dd4-5065ae939189" />
+
+
 
 🛠 Tecnologias Utilizadas
 
@@ -40,6 +43,8 @@ Swagger / OpenAPI
 C#
 
 EF Core Migrations
+
+
 
 📁 Estrutura do Projeto
 /Controllers
@@ -95,6 +100,8 @@ https://localhost:xxxx/swagger
 📌 Versionamento da API
 /api/v1
 
+
+
 📦 Banco de Dados
 
 A aplicação utiliza:
@@ -104,6 +111,8 @@ SQLite (arquivo: futureofwork.db)
 EF Core com Migrations
 
 Criação automática do banco ao rodar o projeto
+
+
 
 🎥 Vídeo
 
