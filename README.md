@@ -1,34 +1,113 @@
-# Global-solution---C-
-API construída em ASP.NET Core para gerenciar tarefas internas, permitindo que funcionários criem entregas, recebam comentários e acompanhem o status de execução. Inclui sistema de comentários, deadlines, versionamento de API e banco SQLite.
-✨ Funcionalidades
+Global Solution — “O Futuro do Trabalho”
 
-Criar tarefas (WorkItems)
+API RESTful construída em ASP.NET Core para gerenciar tarefas internas em um ambiente corporativo.
+A solução permite que funcionários criem entregas (WorkItems), adicionem comentários, atualizem status, acompanhem progresso e trabalhem com versionamento de API.
+Banco de dados SQLite + Entity Framework Core com Migrations.
 
-Listar, atualizar e deletar tarefas
+📌 Funcionalidades
 
-Adicionar comentários em cada entrega
+✔️ Criar tarefas (WorkItems)
 
-Controle de status (Pending, InProgress, Review, Done)
+✔️ Listar, atualizar e deletar tarefas
 
-Banco de dados SQLite
+✔️ Adicionar comentários por entrega
 
-Suporte a versionamento de API
+✔️ Controle de status: Pending, InProgress, Review, Done
 
-Swagger para documentação automática
+✔️ Banco de dados SQLite
 
-🛠 Tecnologias usadas
+✔️ Migrations automáticas
 
-ASP.NET Core
+✔️ Versionamento de API: /api/v1
 
-Entity Framework Core
+✔️ Documentação automática com Swagger
+
+✔️ Boas práticas REST (status code correto + verbos HTTP)
+
+## Arquitetura do Projeto
+<img width="479" height="667" alt="image" src="https://github.com/user-attachments/assets/175a652d-dd0b-49e1-8dd4-5065ae939189" />
+
+🛠 Tecnologias Utilizadas
+
+ASP.NET Core 8
+
+Entity Framework Core 8
 
 SQLite
 
-Swagger
+Swagger / OpenAPI
 
 C#
 
-🚀 Como rodar o projeto
+EF Core Migrations
+
+📁 Estrutura do Projeto
+/Controllers
+/Data
+/Dtos
+/Migrations
+/Models
+appsettings.json
+Program.cs
+futureofwork.db
+
+
+Rotas da API
+https://localhost:xxxx/api/v1
+
+➕ Criar tarefa
+
+POST /WorkItems
+
+📄 Listar tarefas
+
+GET /WorkItems]
+
+🔄 Atualizar tarefa
+
+PUT /WorkItems/{id}
+
+❌ Deletar tarefa
+
+DELETE /WorkItems/{id}
+
+💬 Adicionar comentário
+
+POST /WorkItems/{id}/comments
+
+▶️ Como Rodar o Projeto Localmente
+
+git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+cd SEU_REPOSITORIO
+
+2️⃣ Restaurar dependências
+dotnet restore
+
+3️⃣ Criar o banco via migrations
 dotnet ef database update
+
+4️⃣ Rodar a API
 dotnet run
-Depois acesse: o localhost
+
+5️⃣ Abrir a documentação Swagger
+https://localhost:xxxx/swagger
+
+📌 Versionamento da API
+/api/v1
+
+📦 Banco de Dados
+
+A aplicação utiliza:
+
+SQLite (arquivo: futureofwork.db)
+
+EF Core com Migrations
+
+Criação automática do banco ao rodar o projeto
+
+🎥 Vídeo
+
+
+
+
+
